@@ -1,0 +1,286 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0d6efd0d; /* Use the same background color as before */
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text color */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+}
+
+.section {
+    background-color: #0d6efd0d; /* Use the same background color as before */
+    padding-bottom: 96px;
+}
+
+.title {
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.search-heading {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2.5rem; /* Equivalent to my-10 */
+    margin-bottom: 2.5rem; /* Equivalent to my-10 */
+}
+
+/* Search section styles */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Search input styles */
+.search-input {
+    width: 100%;
+    max-width: 20rem; /* Equivalent to max-w-xs */
+    padding: 0.5rem;
+    border: 1px solid #ccc; /* Equivalent to input-bordered */
+}
+
+/* Search button styles */
+.search-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text color */
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+}
+
+/* Loading container styles */
+.loading-container {
+    text-align: center;
+    margin-top: 40px; /* Equivalent to my-40 */
+    display: none; /* Hide by default */
+}
+
+/* Loading ring styles */
+.loading-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #ccc; /* Use any color you want */
+    border-radius: 50%;
+    border-top-color: #007bff; /* Primary color */
+    animation: loading 1.5s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Phone grid styles */
+.phone-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Equivalent to grid-cols-1 */
+    gap: 1.25rem; /* Equivalent to gap-10 */
+    margin: 0 auto;
+    max-width: 800px; /* Adjust as needed */
+    padding: 0 1rem; /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+    .phone-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Equivalent to md:grid-cols-2 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .phone-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Equivalent to lg:grid-cols-3 */
+    }
+}
+
+/* Show all container styles */
+.show-all-container {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    margin-top: 2rem; /* Equivalent to my-8 */
+}
+
+/* Show all button styles */
+.show-all-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text color */
+}
+
+.show-all-btn:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+}
+
+/* Modal box styles */
+.modal-box {
+    padding: 1rem;
+}
+
+/* Image container styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Phone name styles */
+.phone-name {
+    font-weight: bold;
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    margin-top: 0.75rem; /* Equivalent to mt-3 */
+}
+
+/* Brand styles */
+.brand {
+    padding-top: 1rem; /* Equivalent to py-4 */
+}
+
+/* Specification styles */
+.spec {
+    margin-bottom: 0.5rem; /* Equivalent to my-2 */
+}
+
+/* Release date styles */
+.release-date {
+    margin-bottom: 1rem;
+}
+
+/* Modal action styles */
+.modal-action {
+    display: flex;
+    justify-content: center;
+}
+
+/* Close button styles */
+.close-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #dc2626; /* Red color */
+    color: #fff; /* White text color */
+}
+
+.close-btn:hover {
+    background-color: #b91c1c; /* Darker shade of red */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #0d6efd0d; /* Semi-transparent blue */
+    color: black;
+    padding: 2.5rem; /* Equivalent to p-10 */
+    text-align: center;
+}
+
+/* Footer content styles */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem; /* Equivalent to mt-20 */
+}
+
+/* Logo styles */
+.logo {
+    fill: currentColor;
+}
+
+/* Footer text styles */
+.footer-text {
+    font-size: 1.25rem; /* Equivalent to text-lg */
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Social media container styles */
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+/* Social icons styles */
+.social-icons a {
+    margin-right: 1rem;
+    fill: currentColor;
+}
+
+/* Social icon styles */
+.icon {
+    width: 24px;
+    height: 24px;
+}
